@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="50dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tituloCalendario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendario"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Subtítulo del mes -->
+        <TextView
+            android:id="@+id/subtituloMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Junio 2025"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Imagen principal del calendario -->
+        <ImageView
+            android:id="@+id/imagenCalendario"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/calendar"
+            android:contentDescription="Imagen de calendario"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botones + y - con azul claro -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnMenos"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="−"
+                android:textSize="24sp"
+                android:backgroundTint="#64B5F6"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/btnMas"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="24sp"
+                android:backgroundTint="#64B5F6"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Línea divisoria -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título de eventos del mes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eventos del mes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Lista simulada de eventos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Reunión con equipo - 5 Jun"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Cumpleaños de Ana - 12 Jun"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Presentación de proyecto - 21 Jun"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Botón para ver todos los eventos -->
+        <Button
+            android:id="@+id/btnVerTodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver todos los eventos"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#64B5F6"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
